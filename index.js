@@ -58,7 +58,7 @@ function SanitizeInputs() {
     accessKeyId: _accessKeyId,
     secretAccessKey: _secretAccessKey,
     region: _region,
-    instanceIds: _instanceIds.split(/\n/),
+    instanceIds: _instanceIds.trim().split(/\n/),
     command: _command,
     documentName: _documentName,
     workingDirectory: _workingDirectory,
